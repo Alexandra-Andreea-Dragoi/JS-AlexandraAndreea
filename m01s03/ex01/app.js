@@ -1,8 +1,9 @@
 var object = {
-  name: 'Nylon',
-  surname: 'Windbreaker',
-  age: 23,
-  petOwner: false,
+  name: 'Alexandra',
+  surname: 'Dragoi',
+  age: 42,
+  petOwner: true,
+  carOwner: true,
 };
 
 console.warn(`
@@ -33,3 +34,25 @@ console.warn(`
   Adauga o cheie noua de tip boolean cu numele
   petOwner (observa capitalizarea).
 `);
+console.log(object.name);
+
+console.warn(
+  `Afiseaza fraza “xxx yyy are xx ani.” in consola folosind operatorul de concatenare. `,
+);
+console.log(
+  object.name + ' ' + object.surname + ' ' + 'are ' + object.age + ' ani.',
+);
+
+console.warn(
+  `Afiseaza fraza “xxx s-a nascut in aaaa.” Foloseste tot anul curent pentru a scadea varsta.`,
+);
+console.log(
+  object.name + ' s-a nascut in ' + (2023 - object.age).toString() + '.',
+);
+
+console.warn(
+  `Adauga o cheie noua de tip boolean cu numele carOwner (observa capitalizarea)`,
+);
+console.log(object.carOwner);
+
+console.log(object.age.toString());
