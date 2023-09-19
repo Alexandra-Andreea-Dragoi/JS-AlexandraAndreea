@@ -1,0 +1,13 @@
+1. Afiseaza propozitia “Numele meu este xxx yyy iar emailul meu este: eee.”
+
+2. Afiseaza propozitia “Utilizatorul cu idul iii are xxx tipuri de produse in cartul cu idul ccc.” folosind proprietatea length pe arrayul de produse
+
+3. Afiseaza propozitia “Al treilea produs pe care il cumpara xxx este ppp.”
+
+4. Afiseaza propozitia “xxx yyy cumpara ppp produse in total”; folosind accesul direct la fiecare din obiectele din arrayul products.
+
+5. Afiseaza propozitia “Sunt xxx si cumpar produsele p1, p2 si p3.”; folosind accesul direct la fiecare din obiectele din arrayul products.
+
+6. Afiseaza propozitia “Valoarea totala a cartului cu idul iii este ttt.”; folosind accesul direct la fiecare din obiectele din arrayul products (price, quantity). (product[0].price * product[0].quantity )
+
+7. Afiseaza propozitia ”xxx yyy a cumparat produsul ppp in cantitatea ccc in valoare totala de ttt.” Foloseste produsul de pe indexul 0.
