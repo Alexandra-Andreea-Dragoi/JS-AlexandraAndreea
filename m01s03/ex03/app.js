@@ -36,10 +36,16 @@ larry.friends.person = person;
 steven.friends.person = person;
 andra.friends.person = person;
 
+console.warn(
+  `Seteaza-l pe Steven ca prieten al lui Larry si al Andrei (si invers).`,
+);
+
 steven.friends.larry = larry;
 steven.friends.andra = andra;
 larry.friends.steven = steven;
 andra.friends.steven = steven;
+
+console.warn(`Seteaz-o pe Carol ca prietena a Andrei (si invers).`);
 
 andra.friends.carol = carol;
 carol.friends.andra = andra;

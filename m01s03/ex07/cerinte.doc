@@ -1,0 +1,39 @@
+1. Creeaza un obiect numit person
+
+2. Obiectul sa contina urmatoarele proprietati: firstName, lastName, email, birthYear, pets, zipCode.
+
+3. Proprietatea pets sa contina un array de obiecte cu trei pozitii.
+
+4. Obiectele din pets sa contina urmatoarele proprietati: name, species, age.
+
+5. Toata informatia poate fi inventata. Nu divulga informatii personale inutil.
+
+6. Afiseaza propozitia: “Numele meu este: xxx yyy si am x animale.”. Nu uita de proprietatea length a arrayului pets.
+
+7. Afiseaza propozitia: “Am acelasi email din copilarie: xxx.”.
+
+8. Afiseaza propozitia: “Unul din cele x animale ale mele este species si are age ani.”
+
+9. Calculeaza si afiseaza (folosind anul curent), anul de nastere al animalului de pe indexul 2.
+
+10. Calculeaza si salveaza in variabila difference diferenta de ani dintre persoana si animalul de pe pozitia 0 si afiseaza aceasta diferenta. Foloseste anul curent.
+
+11. Salveaza numele animalului de pe indexul 0 intr-o variabila numita petName.
+
+12. Afiseaza propozitia: “Intre firstName si petName este o diferenta de difference ani.”.
+
+13. In documentul HTML creeaza o lista neordonata <ul> cu 4 elemente goale <li>.
+
+14. Fiecare li sa aiba un id: prop01, prop02… etc
+
+15. Folosind metoda document.getElementById(), afiseaza urmatoarele 5 afirmatii despre obiectul person.
+
+16. Afiseaza propozitia “ firstName, pet1, pet2, pet3 locuiesc toti in aceeasi casa” (folosind bracket notation pe arrayul pets)
+
+17. Calculeaza si afiseaza diferenta de varsta dintre animalul de pe pozitia 0 si cel de pe pozitia 2
+
+18. Afiseaza propozitia: “Ma numesc xxx yyy, m-am nascut in birthYear si codul meu postal este: zipCode”
+
+19. Afiseaza propozitia: “Animalele mele s-au nascut in xxxx, xxx, respectiv xxx.” Foloseste anul curent pentru a efectua scaderea.
+
+20. Folosirea variabilelor este optionala dar incurajata.
