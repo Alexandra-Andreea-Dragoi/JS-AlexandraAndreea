@@ -8,6 +8,10 @@
 // left: 100; top: 200; background: purple;
 
 class Car {
+  // classes are sintatcti sugar
+  isLightOn = false;
+  intervalId = -1;
+
   constructor(
     left = 10,
     top = 10,
@@ -75,14 +79,43 @@ class Car {
 
   turnLightOn() {
     this.lightFront.classList.add('light--on');
+    this.isLightOn = true;
 
     return this;
   }
 
   turnLightOff() {
     this.lightFront.classList.remove('light--on');
+    this.isLightOn = false;
 
     return this;
+  }
+
+  toggleHazards() {
+    if (this.intervalId > 0) {
+      // stop interval
+      clearInterval(this.intervalId);
+      this.intervalId = -1;
+
+      if (this.isLightOn === true) {
+        this.lightFront.classList.add('light--on');
+      } else {
+        this.lightFront.classList.remove('light--on');
+      }
+
+      return;
+    }
+    // // metoda de prezervare a this
+    // post 2016
+    // transformam functia normala in arrwow function
+    this.intervalId = setInterval(() => {
+      // if (this.isLightOn === true) {
+      //   this.turnLightOff();
+      // } else {
+      //   this.turnLightOn();
+      // }
+      this.lightFront.classList.toggle('light--on');
+    }, 800);
   }
 
   move(left, top) {
