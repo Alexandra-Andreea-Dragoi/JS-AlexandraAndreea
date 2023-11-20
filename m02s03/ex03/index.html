@@ -28,12 +28,21 @@
     }
 
     .logs p {
-      position: absolute;
+      /* position: absolute; */
+      /* acesta imi scria liniile una peste cealalta */
       top: 20px;
       left: 20px;
       font-size: 20px;
       font-weight: bold;
       color: #8a2be2;
+    }
+
+    .logs2 p {
+      top: 20px;
+      left: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #e22ba5;
     }
 
     .pane {
@@ -43,15 +52,24 @@
       align-items: center;
     }
 
+    .stage {
+      width: 300px;
+      height: 300px;
+      border: 1px solid #000;
+    }
   </style>
 </head>
 
 <body>
-  <div class="logs"></div>
+  <div class="logs">
+    <div class="logs2"></div>
+  </div>
+
 
   <div class="pane">
     <div class="stage"></div>
   </div>
+
 
   <script src="app.js"></script>
 </body>
