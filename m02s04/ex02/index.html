@@ -1,22 +1,144 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <title>CSS animation in JavaScript</title>    
-    <style>
-      .box {
-        width: 100px;
-        height: 100px; 
-        border: 1px solid #000;
-        transition: background-color 1s ease;
-      }
 
-    </style>
+<head>
+  <meta charset="utf-8" />
+  <title>CSS animation in JavaScript</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      border: 1px solid #000;
+      transition: background-color 1s ease;
+    }
+
+    .controls button {
+      transition: background-color 1s ease;
+    }
+
+    .container {
+      display: inline-flex;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
+
 <body>
-  
-  <div class="box"></div>
+
+  <!-- <div class="box"></div> -->
+
+  <br>
+
+  <form class="container">
+    <label
+      class="box"
+      for="box1"
+    >
+      <input
+        type="radio"
+        id="box1"
+        name="box"
+        value="box1"
+      >
+      BOX 1</label>
+
+    <label
+      class="box"
+      for="box2"
+    >
+      <input
+        type="radio"
+        id="box2"
+        name="box"
+        value="box2"
+      >
+      BOX 2</label>
+
+
+    <label
+      class="box"
+      for="box3"
+    >
+      <input
+        type="radio"
+        id="box3"
+        name="box"
+        value="box3"
+      >
+      BOX 3</label>
+
+    <label
+      class="box"
+      for="box4"
+    >
+      <input
+        type="radio"
+        id="box4"
+        name="box"
+        value="box4"
+      >
+      BOX 4</label>
+
+    <label
+      class="box"
+      for="box5"
+    >
+      <input
+        type="radio"
+        id="box5"
+        name="box"
+        value="box5"
+      >
+      BOX 5</label>
+
+    <label
+      class="box"
+      for="box6"
+    >
+      <input
+        type="radio"
+        id="box6"
+        name="box"
+        value="box6"
+      >
+      BOX 6</label>
+  </form>
+
+  <form class="controls">
+    <button
+      type="button"
+      data-color="red"
+    >red</button>
+    <button
+      type="button"
+      data-color="green"
+    >green</button>
+    <button
+      type="button"
+      data-color="blue"
+    >blue</button>
+
+
+    <input
+      type="text"
+      class="color-input"
+    >
+    <button
+      type="button"
+      data-color=""
+    >Apply Color</button>
+    <!-- schimb don color in text cand pun hex -->
+
+    <button
+      type="button"
+      class="reset-button"
+    >
+      Reset
+    </button>
+  </form>
 
   <script src="app.js"></script>
 </body>
+
 </html>
