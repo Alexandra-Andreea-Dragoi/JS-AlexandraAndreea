@@ -13,8 +13,8 @@ image.addEventListener('load', function () {
   showMessage('Imaginea s-a incarcat');
 });
 
+const imageFullUrl = document.querySelector('.image').src;
+
 image.addEventListener('click', function () {
-  showMessage(
-    'Imaginea cu URL-ul: https://colorpalettes.net/wp-content/uploads/2022/08/color-palette-4573.png s-a incarcat',
-  );
+  showMessage(`Imaginea cu URL-ul: ${imageFullUrl} s-a incarcat`);
 });
