@@ -15,6 +15,7 @@ image.addEventListener('load', function () {
 
 const imageFullUrl = document.querySelector('.image').src;
 
-image.addEventListener('click', function () {
-  showMessage(`Imaginea cu URL-ul: ${imageFullUrl} s-a incarcat`);
+image.addEventListener('click', function (event) {
+  const target = event.currentTarget;
+  showMessage(`Imaginea cu URL-ul: ${target} s-a incarcat`);
 });
